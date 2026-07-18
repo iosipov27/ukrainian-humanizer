@@ -1,6 +1,6 @@
-# Humanizer
+# Ukrainian Humanizer
 
-A portable agent skill that removes signs of AI-generated writing from text, making it sound more natural and human. It is plain Markdown, so it can run in any harness that supports skill-style instructions.
+A portable agent skill that removes signs of AI-generated writing from Ukrainian text, making it sound more natural and human. It is plain Markdown, so it can run in any harness that supports skill-style instructions.
 
 ## Installation
 
@@ -9,37 +9,37 @@ A portable agent skill that removes signs of AI-generated writing from text, mak
 Install with the cross-agent skills CLI:
 
 ```bash
-npx skills add blader/humanizer
+npx skills add iosipov27/ukrainian-humanizer
 ```
 
 Update an existing install:
 
 ```bash
-npx skills update humanizer
+npx skills update ukrainian-humanizer
 ```
 
 To install into every supported agent harness:
 
 ```bash
-npx skills add blader/humanizer --agent '*'
+npx skills add iosipov27/ukrainian-humanizer --agent '*'
 ```
 
 To target one configured harness, pass its agent name:
 
 ```bash
-npx skills add blader/humanizer --agent <agent-name>
+npx skills add iosipov27/ukrainian-humanizer --agent <agent-name>
 ```
 
 ### Claude Code plugin
 
-Claude Code users can also install Humanizer as a plugin:
+Claude Code users can also install Ukrainian Humanizer as a plugin:
 
 ```
-/plugin marketplace add blader/humanizer
-/plugin install humanizer@humanizer
+/plugin marketplace add iosipov27/ukrainian-humanizer
+/plugin install ukrainian-humanizer@ukrainian-humanizer
 ```
 
-The skill is then invoked as `/humanizer:humanizer`.
+The skill is then invoked as `/ukrainian-humanizer:ukrainian-humanizer`.
 
 ### Manual
 
@@ -48,14 +48,14 @@ Any agent harness can use the skill directly because the runtime artifact is `SK
 For example:
 
 ```bash
-git clone https://github.com/blader/humanizer.git /path/to/your/skills/humanizer
+git clone https://github.com/iosipov27/ukrainian-humanizer.git /path/to/your/skills/ukrainian-humanizer
 ```
 
 Or, if you already have this repo cloned:
 
 ```bash
-mkdir -p /path/to/your/skills/humanizer
-cp SKILL.md /path/to/your/skills/humanizer/
+mkdir -p /path/to/your/skills/ukrainian-humanizer
+cp SKILL.md /path/to/your/skills/ukrainian-humanizer/
 ```
 
 ## Usage
@@ -63,7 +63,7 @@ cp SKILL.md /path/to/your/skills/humanizer/
 Invoke the skill however your agent harness exposes installed skills. Common forms include a slash command or a direct request:
 
 ```
-/humanizer
+/ukrainian-humanizer
 
 [paste your text here]
 ```
@@ -77,7 +77,7 @@ Please humanize this text: [your text]
 To match your personal writing style, provide a sample of your own writing:
 
 ```
-/humanizer
+/ukrainian-humanizer
 
 Here's a sample of my writing for voice matching:
 [paste 2-3 paragraphs of your own writing]
@@ -193,6 +193,7 @@ The skill also includes a final "obviously AI generated" audit pass and a second
 
 ## Version History
 
+- **3.0.0** - Renamed the package and installation surface to Ukrainian Humanizer in preparation for the Ukrainian-language prompt. The prompt body and its 33 patterns are unchanged in this packaging-only release.
 - **2.8.2** - Replaced the full before/after example with a first-person Lisbon trip recap. The after now keeps the same topic, perspective, and rough length as the before while removing the AI tells without becoming clipped or slogan-like. No change to the 33 patterns.
 - **2.8.1** - Added cross-agent installation docs, optional Claude Code plugin packaging, and a compact secondhand-text false-positive guard. No change to the 33 patterns.
 - **2.8.0** - Added style/cadence patterns #31-33 for manufactured punchlines, aphorism formulas, and conversational rhetorical openers; expanded #20 to catch offer-to-continue chatbot closers. 33 patterns total.

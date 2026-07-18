@@ -1,18 +1,18 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace-manifest.json",
-  "name": "humanizer",
+  "name": "ukrainian-humanizer",
   "owner": {
-    "name": "blader",
-    "url": "https://github.com/blader"
+    "name": "iosipov27",
+    "url": "https://github.com/iosipov27"
   },
-  "description": "The humanizer skill, installable as a Claude Code plugin.",
+  "description": "The Ukrainian Humanizer skill, installable as a Claude Code plugin.",
   "plugins": [
     {
-      "name": "humanizer",
+      "name": "ukrainian-humanizer",
       "source": "./",
-      "description": "Remove signs of AI-generated writing from text, making it sound more natural and human. Based on Wikipedia's \"Signs of AI writing\" guide.",
+      "description": "Remove signs of AI-generated writing from Ukrainian text, making it sound more natural and human.",
       "license": "MIT",
-      "keywords": ["writing", "editing", "ai-detection", "humanize", "prose", "style"]
+      "keywords": ["ukrainian", "writing", "editing", "ai-detection", "humanize", "prose", "style"]
     }
   ]
 }
