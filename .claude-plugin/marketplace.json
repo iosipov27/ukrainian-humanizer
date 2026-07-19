@@ -5,14 +5,14 @@
     "name": "iosipov27",
     "url": "https://github.com/iosipov27"
   },
-  "description": "The Ukrainian Humanizer skill, installable as a Claude Code plugin.",
+  "description": "An independent Ukrainian adaptation of blader/humanizer, installable as an optional Claude Code plugin.",
   "plugins": [
     {
       "name": "ukrainian-humanizer",
       "source": "./",
-      "description": "Remove signs of AI-generated writing from Ukrainian text, making it sound more natural and human.",
+      "description": "Edit Ukrainian prose contextually while preserving meaning, facts, formatting, and authorial voice.",
       "license": "MIT",
-      "keywords": ["ukrainian", "writing", "editing", "ai-detection", "humanize", "prose", "style"]
+      "keywords": ["ukrainian", "writing", "editing", "humanize", "prose", "style"]
     }
   ]
 }

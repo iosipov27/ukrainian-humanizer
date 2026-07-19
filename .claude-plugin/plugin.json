@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "ukrainian-humanizer",
-  "description": "Remove signs of AI-generated writing from Ukrainian text, making it sound more natural and human.",
-  "version": "3.0.0",
+  "description": "Context-aware Ukrainian editing that removes formulaic prose and calques while preserving meaning, facts, formatting, and authorial voice.",
+  "version": "4.0.0",
   "author": {
     "name": "iosipov27",
     "url": "https://github.com/iosipov27"
@@ -10,5 +10,5 @@
   "homepage": "https://github.com/iosipov27/ukrainian-humanizer",
   "repository": "https://github.com/iosipov27/ukrainian-humanizer",
   "license": "MIT",
-  "keywords": ["ukrainian", "writing", "editing", "ai-detection", "humanize", "prose", "style"]
+  "keywords": ["ukrainian", "writing", "editing", "humanize", "prose", "style"]
 }
